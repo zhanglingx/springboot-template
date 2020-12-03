@@ -1,6 +1,6 @@
 package com.example.demo.service;
 
-import com.example.demo.pojo.User;
+import com.example.demo.entity.User;
 
 public interface UserService {
     int deleteByPrimaryKey(Integer userId);

@@ -1,6 +1,6 @@
-package com.example.demo.mapper;
+package com.example.demo.dao;
 
-import com.example.demo.pojo.User;
+import com.example.demo.entity.User;
 
 public interface UserMapper {
     int deleteByPrimaryKey(Integer userId);

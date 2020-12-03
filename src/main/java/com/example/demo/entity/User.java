@@ -1,4 +1,4 @@
-package com.example.demo.pojo;
+package com.example.demo.entity;
 
 public class User {
     private Integer userId;

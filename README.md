@@ -1,36 +1,23 @@
 # Getting Started
 
-### Try it
+## Startup
+1. 数据库初始化
 
-MacOS/Linux:
+- 本地搭建数据库，执行 `sql` 目录下的 sql
+- 修改 `application.yml` 和 `generatorConfig.xml` 目录下的`数据库连接地址`、`用户名`和`密码`
+
+2. 生成 mapper
+
+```
+mvn mybatis-generator:generate -e
+```
+
+3. 运行项目
 
 ```bash
 ./mvnw spring-boot:run
 ```
 
-Windows:
-
-```bash
-mvnw spring-boot:run
-```
-
-![image](https://spring.io/images/quick-img2-ac5ae88c60ffaa062234a580f9f1abc3.png)
-
-Open your browser and in the address bar at the top enter [http://localhost:8080/hello](http://localhost:8080/hello), you should get a nice friendly response.
-
-![image](https://spring.io/images/quick-img3-afa0a1fe446db8e3c8c7a8d9ca532d23.png)
-
-### Reference Documentation
-For further reference, please consider the following sections:
-
-* [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
-* [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.3.2.RELEASE/maven-plugin/reference/html/)
-* [Create an OCI image](https://docs.spring.io/spring-boot/docs/2.3.2.RELEASE/maven-plugin/reference/html/#build-image)
-* [Spring Web](https://docs.spring.io/spring-boot/docs/2.3.2.RELEASE/reference/htmlsingle/#boot-features-developing-web-applications)
-
-### Guides
-The following guides illustrate how to use some features concretely:
-
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/bookmarks/)
+## Features
+- [x] mybatis-generator
+- [x] druid 连接池

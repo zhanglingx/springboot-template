@@ -1,6 +1,7 @@
 # Getting Started
 
 ## Startup
+
 1. 数据库初始化
 
 - 本地搭建数据库，执行 `sql` 目录下的 sql
@@ -17,6 +18,11 @@ mvn mybatis-generator:generate -e
 ```bash
 ./mvnw spring-boot:run
 ```
+
+4. 前端测试
+
+- 登录：http://localhost:8080/login.html
+- 注册：http://localhost:8080/regist.html
 
 ## Features
 - [x] mybatis-generator

@@ -3,15 +3,15 @@ package com.example.demo.dao;
 import com.example.demo.entity.User;
 
 public interface UserMapper {
-    int deleteByPrimaryKey(Integer userId);
+  int deleteByPrimaryKey(Integer userId);
 
-    int insert(User record);
+  int insert(User record);
 
-    int insertSelective(User record);
+  int insertSelective(User record);
 
-    User selectByPrimaryKey(Integer userId);
+  User selectByPrimaryKey(Integer userId);
 
-    int updateByPrimaryKeySelective(User record);
+  int updateByPrimaryKeySelective(User record);
 
-    int updateByPrimaryKey(User record);
+  int updateByPrimaryKey(User record);
 }

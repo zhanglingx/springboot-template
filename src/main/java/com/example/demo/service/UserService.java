@@ -1,17 +1,23 @@
 package com.example.demo.service;
 
+import com.example.demo.common.Result;
 import com.example.demo.entity.User;
 
 public interface UserService {
-    int deleteByPrimaryKey(Integer userId);
+  // 自定义方法
+  Result<User> login(User user);
+  Result<User> regist(User user);
 
-    int insert(User record);
+  // 自动生成的mapper方法
+  int deleteByPrimaryKey(Integer userId);
 
-    int insertSelective(User record);
+  int insert(User record);
 
-    User selectByPrimaryKey(Integer userId);
+  int insertSelective(User record);
 
-    int updateByPrimaryKeySelective(User record);
+  User selectByPrimaryKey(Integer userId);
 
-    int updateByPrimaryKey(User record);
+  int updateByPrimaryKeySelective(User record);
+
+  int updateByPrimaryKey(User record);
 }

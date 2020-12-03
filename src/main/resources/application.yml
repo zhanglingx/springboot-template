@@ -37,6 +37,8 @@ spring:
       max-pool-prepared-statement-per-connection-size: 20
       # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，wall用于防火墙
       filters: stat,wall
+  resources:
+    static-locations: classpath:/templates  # 访问静态页面
 
 # 配置mybatis
 mybatis:

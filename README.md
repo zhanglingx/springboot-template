@@ -27,3 +27,4 @@ mvn mybatis-generator:generate -e
 ## Features
 - [x] mybatis-generator
 - [x] druid 连接池
+- [x] swagger2 接口文档
